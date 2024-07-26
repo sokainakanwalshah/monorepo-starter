@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "preinstall": "yarn workspace common build"
+  }
+}
